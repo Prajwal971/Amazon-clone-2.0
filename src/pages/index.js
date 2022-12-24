@@ -7,10 +7,8 @@ export default function Home() {
       <Head>
         <title>Amazon 2.0</title>
       </Head>
-      <h1>Hello Index.js with next js</h1>
-
       {/* Header Component */}
-      <Header/>
+      <Header />
     </div>
   );
 }
