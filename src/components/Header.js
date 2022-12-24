@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
 
 function Header() {
     return (
@@ -6,7 +7,7 @@ function Header() {
             {/* Top Nav */}
             <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
                 <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
-                    <Image 
+                    <Image
                         src='https://links.papareact.com/f90'
                         width={150}
                         height={40}
@@ -14,9 +15,15 @@ function Header() {
                         className="cursor-pointer"
                     />
                 </div>
+
+                {/* Search */}
+                <div className="hidden bg-yellow-400 sm:flex items-center h-10 rounded-md flex-grow cursor-pointer hover:bg-yellow-500 ">
+                    <input className='p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4 ' type="text" />
+                    <MagnifyingGlassIcon className="h-12 p-4" />
+                </div>
             </div>
 
-            
+
 
 
             {/* Bottom Nav */}
